@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data — raw and prepared data stays local, not in the repo
+data/raw/
+data/prepared/
+data/reformatted/
+
+# Models
+models/
+
+# Model outputs — adapters are large, host on HuggingFace Hub instead
+outputs/
+
+# Logs
+*.log
+runs/
+wandb/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
