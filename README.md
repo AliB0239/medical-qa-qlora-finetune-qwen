@@ -169,6 +169,7 @@ python scripts/evaluate.py --phase 2 --compare-all
 ## Limitations
 
 - This model is for **educational purposes only** — not for clinical use
+- This project reflects the core principles and architecture of production system.
 - QLoRA fine-tuning improves domain knowledge but doesn't eliminate hallucination
 - The structured output (Phase 2) relies on heuristic answer segmentation, which is imperfect
 - Training on 4GB VRAM required conservative batch sizes and sequence lengths
