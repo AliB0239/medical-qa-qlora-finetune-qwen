@@ -79,7 +79,7 @@ medqa-finetune/
 ```bash
 # clone the repo
 git clone https://github.com/your-username/medqa-finetune.git
-cd medqa-finetune
+cd medical-qa-qlora-finetune-qwen
 
 # create virtual environment
 python -m venv venv
