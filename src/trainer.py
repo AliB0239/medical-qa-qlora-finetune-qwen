@@ -31,7 +31,7 @@ def build_training_args(train_cfg: TrainingConfig = training_config) -> SFTConfi
 
         # ── training duration ────────────────────────────────────────────────
         num_train_epochs=train_cfg.num_train_epochs,
-        max_steps=train_cfg.max_steps,
+        #max_steps=train_cfg.max_steps,
         per_device_train_batch_size=train_cfg.per_device_train_batch_size,
         per_device_eval_batch_size=train_cfg.per_device_eval_batch_size,
         gradient_accumulation_steps=train_cfg.gradient_accumulation_steps,
@@ -57,6 +57,7 @@ def build_training_args(train_cfg: TrainingConfig = training_config) -> SFTConfi
         load_best_model_at_end=train_cfg.load_best_model_at_end,
         metric_for_best_model="eval_loss",
         greater_is_better=False,
+        resume_from_checkpoint=True,
 
         # ── SFT-specific ─────────────────────────────────────────────────────
         max_length=data_config.max_seq_length,
